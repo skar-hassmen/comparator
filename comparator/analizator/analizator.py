@@ -119,7 +119,7 @@ def start_analize(db: object):
             for function_db in functions_db:
                 similarity: float = compare_functions(function_test, function_db, db)
                 rows.append(
-                    serializer_data_for_table_csv([lib[1], lib[2], lib[3], function_db[1], function_db[2], test[1], test[2], functions_test[1], function_db[2], similarity])
+                    serializer_data_for_table_csv([lib[1], lib[2], lib[3], function_db[1], function_db[2], test[1], test[2], function_test[1], function_test[2], similarity])
                 )
 
     if len(rows) != 0:
