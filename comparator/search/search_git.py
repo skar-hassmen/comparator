@@ -3,7 +3,7 @@ import validators
 
 from svn.remote import RemoteClient
 
-ACCESS_TOKEN = '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'
+ACCESS_TOKEN = ''
 
 g = Github(ACCESS_TOKEN)
 
