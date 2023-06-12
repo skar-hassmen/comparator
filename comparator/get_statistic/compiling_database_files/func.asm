@@ -1438,8 +1438,7 @@ _text           ends
 _data           segment dword public 'DATA' use32
                 assume cs:_data
                 ;org 62502000h
-off_62502000    dd offset dword_62501BA0
-                                        ; DATA XREF: sub_625013C0\u2191r
+off_62502000    dd offset dword_62501BA0 ; DATA XREF: sub_625013C0\u2191r
                                         ; sub_625013C0+12\u2191r ...
 dword_62502004  dd 0                    ; DATA XREF: sub_625011A0:loc_625011E8\u2191r
                                         ; sub_625011A0+82\u2191o
@@ -1460,8 +1459,7 @@ _rdata          segment dword public 'DATA' use32
                 assume cs:_rdata
                 ;org 62503000h
 ; const CHAR ModuleName[]
-ModuleName      db 'libgcc_s_dw2-1.dll',0
-                                        ; DATA XREF: sub_625011A0+6\u2191o
+ModuleName      db 'libgcc_s_dw2-1.dll',0 ; DATA XREF: sub_625011A0+6\u2191o
                                         ; sub_62501230+6\u2191o
 ; const CHAR ProcName[]
 ProcName        db '__register_frame_info',0
@@ -1638,8 +1636,7 @@ dword_62505034  dd ?                    ; DATA XREF: sub_62501550+14\u2191r
 dword_62505038  dd ?                    ; DATA XREF: .text:625015CA\u2191r
                                         ; .text:62501657\u2191r ...
 ; struct _RTL_CRITICAL_SECTION CriticalSection
-CriticalSection _RTL_CRITICAL_SECTION <?>
-                                        ; DATA XREF: sub_62501550+8\u2191o
+CriticalSection _RTL_CRITICAL_SECTION <?> ; DATA XREF: sub_62501550+8\u2191o
                                         ; sub_62501550:loc_6250159C\u2191o ...
 dword_62505054  dd ?                    ; DATA XREF: sub_625018D0\u2191r
                                         ; sub_625018D0+1D\u2191w
@@ -1684,8 +1681,7 @@ _bss            ends
                 extrn __imp_LeaveCriticalSection:dword
                                         ; DATA XREF: LeaveCriticalSection\u2191r
 ; LPVOID __stdcall TlsGetValue(DWORD dwTlsIndex)
-                extrn __imp_TlsGetValue:dword
-                                        ; DATA XREF: TlsGetValue\u2191r
+                extrn __imp_TlsGetValue:dword ; DATA XREF: TlsGetValue\u2191r
 ; BOOL __stdcall VirtualProtect(LPVOID lpAddress, SIZE_T dwSize, DWORD flNewProtect, PDWORD lpflOldProtect)
                 extrn __imp_VirtualProtect:dword
                                         ; DATA XREF: VirtualProtect\u2191r
@@ -1696,8 +1692,7 @@ _bss            ends
 ;
 ; Imports from msvcrt.dll
 ;
-                extrn __imp___dllonexit:dword
-                                        ; DATA XREF: __dllonexit\u2191r
+                extrn __imp___dllonexit:dword ; DATA XREF: __dllonexit\u2191r
 ; int *__cdecl _errno()
                 extrn __imp__errno:dword ; DATA XREF: _errno\u2191r
 ; FILE iob[]
@@ -1723,8 +1718,7 @@ _bss            ends
 ; char *__cdecl strcpy(char *Destination, const char *Source)
                 extrn __imp_strcpy:dword ; DATA XREF: strcpy\u2191r
 ; int __cdecl vfprintf(FILE *const Stream, const char *const Format, va_list ArgList)
-                extrn __imp_vfprintf:dword
-                                        ; DATA XREF: vfprintf\u2191r
+                extrn __imp_vfprintf:dword ; DATA XREF: vfprintf\u2191r
 
 
 ; Section 8. (virtual address 00008000)

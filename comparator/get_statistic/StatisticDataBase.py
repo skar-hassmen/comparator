@@ -22,16 +22,16 @@ class StatisticDataBase:
                 password=self.__password,
                 database=self.__db_name
             )
-            print("[DATABASE] PostgreSQL connection open")
+            print("[INFO] PostgreSQL connection open")
         except Exception as ex:
-            print("[DATABASE] Error connection by PostgreSQL", ex)
+            print("[INFO] Error connection by PostgreSQL", ex)
 
     def close_connection(self):
         if self.__connection is not None:
             self.__connection.close()
-            print("[DATABASE] PostgreSQL connection closed")
+            print("[INFO] PostgreSQL connection closed")
 
-    def check_table(self, name_table: str) -> bool:
+    def check_table(self) -> bool:
         if self.__connection is not None:
             with self.__connection.cursor() as cursor:
                 cursor.execute(
@@ -39,10 +39,9 @@ class StatisticDataBase:
                     SELECT EXISTS (
                         SELECT 1
                         FROM pg_tables
-                        WHERE tablename = %s
+                        WHERE tablename = 'libs'
                     );
-                    ''',
-                    (name_table,)
+                    '''
                 )
                 self.__connection.commit()
                 return bool(cursor.fetchall()[0][0])
@@ -79,30 +78,7 @@ class StatisticDataBase:
                     '''
                 )
                 self.__connection.commit()
-                print("[DATABASE] Tables (libs, functions, instructions) were created")
-
-    def create_results_table(self):
-        if self.__connection is not None:
-            with self.__connection.cursor() as cursor:
-                cursor.execute(
-                    '''
-                    CREATE TABLE results (
-                        id serial PRIMARY KEY,
-                        lib_name varchar(255) NOT NULL,
-                        lib_type varchar(3) NOT NULL,
-                        lib_version int NOT NULL,
-                        lib_function_name varchar(255) NOT NULL,
-                        lib_function_offset varchar(255) NOT NULL,
-                        test_name varchar(255) NOT NULL,
-                        test_type varchar(3) NOT NULL,
-                        test_function_name varchar(255) NOT NULL,
-                        test_function_offset varchar(255) NOT NULL,
-                        similarity float NOT NULL
-                    );
-                    '''
-                )
-                self.__connection.commit()
-                print("[DATABASE] Table (results) was created")
+                print("[INFO] Table was created")
 
     def insert_data_for_lib(self, name_lib: str, type_lib: str, version: int, is_test_file: bool) -> int:
         id_created_record: int = -1
@@ -140,7 +116,8 @@ class StatisticDataBase:
 
         return id_created_record
 
-    def insert_data_for_instruction(self, list_instructions: list[tuple], fk_instructions_functions: int):
+    def insert_data_for_instruction(self, list_instructions: list[tuple], fk_instructions_functions: int) -> int:
+        id_created_record: int = -1
         if self.__connection is not None:
             with self.__connection.cursor() as cursor:
                 for elem_instruction in list_instructions:
@@ -148,31 +125,15 @@ class StatisticDataBase:
                         '''
                         INSERT INTO instructions (name_instruction, count_instruction, fk_instructions_functions) 
                         VALUES (%s, %s, %s)
-
+                        
                         RETURNING id
                         ''',
                         (elem_instruction[0], elem_instruction[1], fk_instructions_functions)
                     )
                 self.__connection.commit()
+                id_created_record = cursor.fetchall()[0][0]
 
-    def insert_data_for_results(self, list_result: list[tuple]):
-        if self.__connection is not None:
-            with self.__connection.cursor() as cursor:
-                cursor.executemany(
-                    '''
-                    INSERT INTO results (
-                        lib_name, lib_type, lib_version, 
-                        lib_function_name, lib_function_offset, test_name,
-                        test_type, test_function_name, test_function_offset, 
-                        similarity
-                    ) 
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-
-                    RETURNING id
-                    ''',
-                    list_result
-                )
-                self.__connection.commit()
+        return id_created_record
 
     def select_libs(self, is_test_file: bool) -> list:
         if self.__connection is not None:
@@ -187,14 +148,14 @@ class StatisticDataBase:
                 self.__connection.commit()
                 return cursor.fetchall()
 
-    def select_functions(self, id_list: list):
+    def select_functions(self, id_lib: int):
         if self.__connection is not None:
             with self.__connection.cursor() as cursor:
                 cursor.execute(
                     '''
-                    SELECT * FROM functions WHERE functions.fk_functions_libs IN %s;
+                    SELECT * FROM functions WHERE functions.fk_functions_libs=%s
                     ''',
-                    (tuple(id_list),)
+                    (str(id_lib),)
                 )
 
                 self.__connection.commit()
@@ -213,17 +174,6 @@ class StatisticDataBase:
                 self.__connection.commit()
                 return cursor.fetchall()
 
-    def select_results(self):
-        if self.__connection is not None:
-            with self.__connection.cursor() as cursor:
-                cursor.execute(
-                    '''
-                    SELECT * FROM results; 
-                    '''
-                )
-                self.__connection.commit()
-                return cursor.fetchall()
-
     def delete_tables(self):
         if self.__connection is not None:
             with self.__connection.cursor() as cursor:
@@ -235,15 +185,4 @@ class StatisticDataBase:
                     '''
                 )
                 self.__connection.commit()
-                print("[DATABASE] Tables (libs, functions, instructions) were deleted")
-
-    def delete_results_table(self):
-        if self.__connection is not None:
-            with self.__connection.cursor() as cursor:
-                cursor.execute(
-                    '''
-                    DROP TABLE results;
-                    '''
-                )
-                self.__connection.commit()
-                print("[DATABASE] Table (results) was deleted")
+                print("[INFO] Table was deleted")
