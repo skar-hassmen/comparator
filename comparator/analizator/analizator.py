@@ -1,6 +1,6 @@
-from analizator.constants import fieldnames
-from analizator.rw_csv import write_data_to_csv_file
+from networkx.algorithms import isomorphism
 
+import time
 import networkx as nx
 
 
@@ -51,6 +51,25 @@ def compare_graphs(str_graph_db: str, str_graph_test) -> float:
     graph_db = create_graph(str_graph_db)
     graph_test = create_graph(str_graph_test)
 
+    coff: int = 0
+
+    # по одинаковому числу вершин и ребер
+    if graph_db.number_of_nodes() == graph_test.number_of_nodes() and graph_db.number_of_edges() == graph_test.number_of_edges():
+        coff += 1
+
+    # по одинаковой структуре
+    if set(graph_db.nodes()) == set(graph_test.nodes()) and set(graph_db.edges()) == set(graph_test.edges()):
+        coff += 1
+
+    # по графовому ядру
+    gm = isomorphism.GraphMatcher(graph_db, graph_test)
+    if gm.is_isomorphic():
+        coff += 1
+
+    if coff == 0:
+        return 0.0
+
+    print(coff)
     cost: int = nx.graph_edit_distance(graph_db, graph_test, timeout=0.5)
     similarity: float = 0.0
 
@@ -58,17 +77,12 @@ def compare_graphs(str_graph_db: str, str_graph_test) -> float:
         similarity = 0
     elif cost == 0:
         similarity = 1
-    elif cost < 10:
-        similarity = 0.8
-    elif cost < 30:
-        similarity = 0.6
-    elif cost < 50:
-        similarity = 0.4
-    elif cost < 80:
-        similarity = 0.2
+    else:
+        if cost <= 50:
+            similarity = 1 - (cost / 50)
 
     graph_db.clear()
-    graph_db.clear()
+    graph_test.clear()
 
     return similarity
 
@@ -97,30 +111,45 @@ def compare_functions(function_db: tuple, function_test: tuple, db: object):
     return (k1 + k2 + k3 + k4) / 4
 
 
-def serializer_data_for_table_csv(data):
-    result: dict = dict()
-
-    for i in range(0, len(fieldnames)):
-        result[fieldnames[i]] = data[i]
-
-    return result
-
-
 def start_analize(db: object):
+    start = time.time()
+
     list_libs: list = db.select_libs(is_test_file=False)
-    test: tuple = list_libs[0]
-    functions_test: list = db.select_functions(test[0])
+    test: list = db.select_libs(is_test_file=True)
 
-    rows: list = list()
+    if len(test) > 0:
+        test: tuple = test[0]
+    else:
+        print("[INFO] Test file was not found")
+        return
 
+    functions_test: list = db.select_functions([test[0]])
+
+    libs: dict = dict()
+    id_list: list = list()
     for lib in list_libs:
-        functions_db = db.select_functions(lib[0])
-        for function_test in functions_test:
-            for function_db in functions_db:
-                similarity: float = compare_functions(function_test, function_db, db)
-                rows.append(
-                    serializer_data_for_table_csv([lib[1], lib[2], lib[3], function_db[1], function_db[2], test[1], test[2], function_test[1], function_test[2], similarity])
+        libs[lib[0]] = {"name_lib": lib[1], "type_lib": lib[2], "version": lib[3]}
+        id_list.append(lib[0])
+
+
+    functions_db: list = db.select_functions(id_list)
+    for function_test in functions_test:
+        data_for_results: list[tuple] = list()
+        for function_db in functions_db:
+            similarity: float = compare_functions(function_test, function_db, db)
+
+            if similarity >= 0.70:
+                index_lib: int = function_db[6]
+                data_for_results.append(
+                    tuple(
+                        [libs[index_lib]["name_lib"], libs[index_lib]["type_lib"], libs[index_lib]["version"], function_db[1], function_db[2], test[1], test[2], function_test[1],
+                     function_test[2], similarity]
+                    )
                 )
 
-    if len(rows) != 0:
-        write_data_to_csv_file(path="result.csv", rows=rows, fieldnames=fieldnames)
+        if(len(data_for_results)) > 0:
+            db.insert_data_for_results(data_for_results)
+
+    end = time.time()
+    print(f"[INFO] The time of execution of analizator is: {round(end - start, 2)} sec.")
+    print("[INFO] Analysis was successful")

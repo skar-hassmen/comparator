@@ -1,0 +1,826 @@
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Possible file format: MS-DOS executable (EXE) (C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\loaders\dos.dll)
+Possible file format: Portable executable for 80386 (PE) (C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\loaders\pe.dll)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   180224    22 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   966656            total memory allocated
+
+Loading file 'C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.exe' into database...
+Detected file format: Portable executable for 80386 (PE)
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc.dll for metapc...Initializing processor module metapc...OK
+Autoanalysis subsystem has been initialized.
+  0. Creating a new segment  (00401000-00409000) ... ... OK
+  1. Creating a new segment  (00409000-0040A000) ... ... OK
+  2. Creating a new segment  (0040A000-0040B000) ... ... OK
+  3. Creating a new segment  (0040B000-0040D000) ... ... OK
+  4. Creating a new segment  (0040D000-0040E000) ... ... OK
+  5. Creating a new segment  (0040F000-00410000) ... ... OK
+  6. Creating a new segment  (00410000-00411000) ... ... OK
+  7. Creating a new segment  (00411000-00412000) ... ... OK
+Reading exports directory...
+Reading imports directory...
+Applying fixups...
+Assuming __cdecl calling convention by default
+Plan  FLIRT signature: GCC (mingw/cygwin) v3.4 runtime
+main() function at 401447, named "_main"
+Type library 'mssdk_win7' loaded. Applying types...
+Types applied to 68 names.
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File 'C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.exe' has been successfully loaded into the database.
+Hex-Rays Decompiler plugin has been loaded (v7.5.0.201028)
+  License: 57-565C-C40A-5B IDA PRO 7.5 SP3 (99 users)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+  Please check the Edit/Plugins menu for more informaton.
+IDAPython Hex-Rays bindings initialized.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Waiting for the end of the auto analysis...
+Using FLIRT signature: GCC (mingw/cygwin) v3.4 runtime
+Propagating type information...
+Function argument information has been propagated
+lumina: Invalid remote certificate
+The initial autoanalysis has been finished.
+
+
+------ Creating the output file.... --------
+Note: the text contains characters (e.g., '↓') that cannot be encoded in "windows-1251". Those characters have been written as C-escaped Unicode codepoints.
+All done, exiting...
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v7.5.0.201028)
+  License: 57-565C-C40A-5B IDA PRO 7.5 SP3 (99 users)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+  Please check the Edit/Plugins menu for more informaton.
+IDAPython Hex-Rays bindings initialized.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v7.5.0.201028)
+  License: 57-565C-C40A-5B IDA PRO 7.5 SP3 (99 users)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+  Please check the Edit/Plugins menu for more informaton.
+IDAPython Hex-Rays bindings initialized.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Possible file format: MS-DOS executable (EXE) (C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\loaders\dos64.dll)
+Possible file format: Portable executable for 80386 (PE) (C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\loaders\pe64.dll)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   180224    22 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   966656            total memory allocated
+
+Loading file 'C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.exe' into database...
+Detected file format: Portable executable for 80386 (PE)
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Autoanalysis subsystem has been initialized.
+  0. Creating a new segment  (0000000000401000-0000000000409000) ... ... OK
+  1. Creating a new segment  (0000000000409000-000000000040A000) ... ... OK
+  2. Creating a new segment  (000000000040A000-000000000040B000) ... ... OK
+  3. Creating a new segment  (000000000040B000-000000000040D000) ... ... OK
+  4. Creating a new segment  (000000000040D000-000000000040E000) ... ... OK
+  5. Creating a new segment  (000000000040F000-0000000000410000) ... ... OK
+  6. Creating a new segment  (0000000000410000-0000000000411000) ... ... OK
+  7. Creating a new segment  (0000000000411000-0000000000412000) ... ... OK
+Reading exports directory...
+Reading imports directory...
+Applying fixups...
+Assuming __cdecl calling convention by default
+Plan  FLIRT signature: GCC (mingw/cygwin) v3.4 runtime
+main() function at 401447, named "_main"
+Type library 'mssdk_win7' loaded. Applying types...
+Types applied to 68 names.
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File 'C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.exe' has been successfully loaded into the database.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Waiting for the end of the auto analysis...
+Using FLIRT signature: GCC (mingw/cygwin) v3.4 runtime
+Propagating type information...
+Function argument information has been propagated
+lumina: Invalid remote certificate
+The initial autoanalysis has been finished.
+
+
+------ Creating the output file.... --------
+Note: the text contains characters (e.g., '↓') that cannot be encoded in "windows-1251". Those characters have been written as C-escaped Unicode codepoints.
+All done, exiting...
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[INFO] PostgreSQL connection open
+[INFO] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\for_test.py: not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\python\3\ida_idaapi.py", line 616, in IDAPython_ExecScript
+    exec(code, g)
+  File "C:/Users/mbks/Desktop/goodprogram/comparator/get_statistic/for_test.py", line 92, in <module>
+    entry_point()
+  File "C:/Users/mbks/Desktop/goodprogram/comparator/get_statistic/for_test.py", line 86, in entry_point
+    db.insert_data_for_instruction(serializer_instructions(statistic_instructions, id_function))
+  File "C:\Users/mbks/Desktop/goodprogram/comparator/get_statistic\StatisticDataBase.py", line 146, in insert_data_for_instruction
+    cursor.execute(
+TypeError: not all arguments converted during string formatting
+ -> OK
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+IDA has found an unpacked version of database: C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.i64
+on the disk.
+
+Should we proceed with the unpacked files?
+ -> Pro~c~eed with unpacked base
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\for_test.py: not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\python\3\ida_idaapi.py", line 616, in IDAPython_ExecScript
+    exec(code, g)
+  File "C:/Users/mbks/Desktop/goodprogram/comparator/get_statistic/for_test.py", line 92, in <module>
+    entry_point()
+  File "C:/Users/mbks/Desktop/goodprogram/comparator/get_statistic/for_test.py", line 86, in entry_point
+    db.insert_data_for_instruction(serializer_instructions(statistic_instructions, id_function))
+  File "C:\Users/mbks/Desktop/goodprogram/comparator/get_statistic\StatisticDataBase.py", line 146, in insert_data_for_instruction
+    cursor.execute(
+TypeError: not all arguments converted during string formatting
+ -> OK
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+IDA has found an unpacked version of database: C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.i64
+on the disk.
+
+Should we proceed with the unpacked files?
+ -> Pro~c~eed with unpacked base
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\for_test.py: No module named 'get_statistic'
+Traceback (most recent call last):
+  File "C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\python\3\ida_idaapi.py", line 616, in IDAPython_ExecScript
+    exec(code, g)
+  File "C:/Users/mbks/Desktop/goodprogram/comparator/get_statistic/for_test.py", line 4, in <module>
+    from get_statistic.statistic import entry_point
+ModuleNotFoundError: No module named 'get_statistic'
+ -> OK
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+IDA has found an unpacked version of database: C:\Users\mbks\Desktop\goodprogram\comparator\get_statistic\test_file\vuln2.i64
+on the disk.
+
+Should we proceed with the unpacked files?
+ -> Pro~c~eed with unpacked base
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+BinExport 11 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   172032    21 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+   958464            total memory allocated
+
+Loading processor module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll for metapc...Initializing processor module metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'vuln2.exe' has been loaded.
+BinDiff 6 (@297836223, Feb 28 2020), (c)2004-2011 zynamics GmbH, (c)2011-2020 Google LLC.
+Error: Could not load configuration file, skipping BinDiff plugin.
+[DATABASE] PostgreSQL connection open
+[DATABASE] PostgreSQL connection closed
+Flushing buffers, please wait...ok
+Unloading IDP module C:\Users\mbks\Desktop\goodprogram\IDAPro7.5\procs\pc64.dll...
